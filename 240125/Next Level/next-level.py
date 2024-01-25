@@ -1,5 +1,5 @@
 class user():
-    def __init__(self, id='hello', lv='28'):
+    def __init__(self, id='codetree', lv='10'):
         self.id = id
         self.lv = int(lv)
 
