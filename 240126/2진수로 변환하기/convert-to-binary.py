@@ -1,11 +1,13 @@
-def decode(n):
-    decimal = []
-    while n > 2:
-        decimal.append(n%2)
-        n //= 2
-    decimal.append(n%2)
-    return decimal[::-1]
-    
 n = int(input())
-for i in decode(n):
-    print(i, end='')
+
+digits = []
+while True:
+    if n < 2:
+        digits.append(n)
+        break
+    else:
+        digits.append(n%2)
+        n //= 2
+
+for d in digits[::-1]:
+    print(d, end='')
