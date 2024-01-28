@@ -8,4 +8,5 @@ for i in range(1,n):
     else:
         maximum = max(cnt, maximum)
         cnt = 1
+    maximum = max(cnt, maximum)
 print(maximum)
